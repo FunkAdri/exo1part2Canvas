@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>CANVAS IS BACK AGAIN</title>
+  </head>
+  <body>
+
+<canvas id="canvas1" width="600" height="600">Oui</canvas>
+
+<script type="text/javascript">
+var c = document.getElementById("canvas1");
+var ctx = c.getContext("2d");
+
+ctx.beginPath()
+ctx.arc(150,200,50,0,Math.PI,true);
+ctx.fillStyle = "#8a0908";
+ctx.fill();
+
+ctx.beginPath()
+ctx.moveTo(100,200)
+ctx.lineTo(200,200)
+ctx.lineTo(150,450)
+ctx.lineTo(100,200)
+ctx.fillStyle="#aa6522"
+ctx.fill()
+</script>
+  </body>
+</html>
